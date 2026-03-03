@@ -65,6 +65,7 @@ AI 技术全景
 
 | 目录 | 内容 | 关键词 |
 |------|------|--------|
+| [00-基础概念](./00-基础概念/) | 模型演化史、Transformer 详解、训练与推理全流程 | 注意力机制, 反向传播, KV Cache, 自回归生成 |
 | [01-预训练工程](./01-预训练工程/) | 数据工程、模型架构、训练基础设施、推理优化 | FineWeb, MoE, MLA, Megatron, vLLM |
 | [02-后训练与对齐](./02-后训练与对齐/) | SFT、RL 算法、RL 训练框架、评估基准、AI 安全 | GRPO, DPO, veRL, MMLU, SWE-bench, Constitutional AI |
 | [03-推理与Agent](./03-推理与Agent/) | 推理模型、DeepResearch、Agent 系统 | DeepSeek-R1, MCP, Coding Agent, Agent Swarm |
@@ -106,6 +107,7 @@ AI 技术全景
 
 | 我想... | 去哪看 |
 |---------|--------|
+| **理解基础概念和演化** | [00-基础概念](./00-基础概念/) |
 | 了解预训练怎么做 | [01-预训练工程](./01-预训练工程/README.md) |
 | 了解 RL 训练怎么做 | [02-后训练与对齐](./02-后训练与对齐/README.md) |
 | 了解 Agent 和 DeepResearch | [03-推理与Agent](./03-推理与Agent/README.md) |
