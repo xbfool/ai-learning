@@ -50,6 +50,8 @@ SFT → DPO (直接从偏好数据优化)
 - [SFT 最佳实践](./SFT最佳实践.md)
 - [RL 算法详解](./RL算法详解.md) - GRPO、DPO、PPO 等对比
 - [RL 训练框架](./RL训练框架.md) - veRL、ROLL、AReaL 三大开源框架
+- [评估基准与方法论](./评估基准与方法论.md) - MMLU、SWE-bench、Chatbot Arena 等基准全景
+- [AI 安全与对齐](./AI安全与对齐.md) - Constitutional AI、红队测试、机械可解释性、安全组织
 
 ## 关键洞察
 

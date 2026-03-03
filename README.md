@@ -5,16 +5,18 @@
 
 ## 一、全景概览
 
-当前 AI（特别是大语言模型 LLM）领域可划分为以下六大技术板块：
+当前 AI（特别是大语言模型 LLM）领域可划分为以下八大板块：
 
 ```
 AI 技术全景
 ├── 1. 预训练工程        → 数据、架构、基础设施、Scaling Laws
-├── 2. 后训练与对齐      → SFT、RLHF、GRPO、RL 训练框架
-├── 3. 推理与 Agent      → 推理模型、DeepResearch、Agent 系统
+├── 2. 后训练与对齐      → SFT、RLHF、GRPO、RL 框架、评估基准、AI 安全
+├── 3. 推理与 Agent      → 推理模型、DeepResearch、Agent 系统、MCP、Coding Agent
 ├── 4. 生成模型          → 图像生成、视频生成、多模态统一模型
-├── 5. 推理优化与部署    → 量化、KV Cache、推测解码、Serving 框架
-└── 6. 开源模型解读      → Kimi K2.5, Step 3.5 Flash, GLM-5, OLMo 3, Molmo 2
+├── 5. 开源模型解读      → DeepSeek-V3/R1, Kimi K2.5, Step 3.5 Flash, GLM-5, OLMo 3, Molmo 2
+├── 6. 语音与音频        → TTS、ASR、音乐生成、语音 Agent、视频原生音频
+├── 7. 推荐阅读清单      → 按主题分类的必读论文
+└── 8. 学习路线与实战    → 零基础入门、Agent 开发路径、本地 AI 体验项目
 ```
 
 ## 二、2025-2026 年度核心趋势
@@ -33,6 +35,7 @@ AI 技术全景
 
 ### 趋势 3：Agent 化成为核心应用方向
 - Deep Research 类产品（Google、OpenAI、Qwen、Step）成为第一个大规模落地的 Agent 应用
+- Coding Agent (Claude Code, Cursor, Devin) 改变软件开发方式
 - Agent 训练从 Prompt Engineering 转向 **端到端 RL 训练**
 - Kimi K2.5 的 Agent Swarm（PARL）代表了并行 Agent 编排的新方向
 - MCP (Model Context Protocol) 标准化 Agent 工具调用
@@ -53,16 +56,23 @@ AI 技术全景
 - 中国实验室主导开源生成模型：HunyuanVideo、Wan、CogVideoX、Janus
 - 开源 RL 框架：veRL (字节)、ROLL (淘天)、AReaL (蚂蚁) 三足鼎立
 
+### 趋势 7：语音 AI 爆发
+- 原生语音对话 (GPT-4o Voice, Gemini Live) 延迟降至 232ms
+- 开源 TTS 全面突破：CosyVoice 2、F5-TTS、Fish Speech 达到人类级质量
+- 视频原生音频成为标配：Sora 2、Veo 3、Kling 3.0 同步生成视频和音频
+
 ## 三、文档目录
 
 | 目录 | 内容 | 关键词 |
 |------|------|--------|
 | [01-预训练工程](./01-预训练工程/) | 数据工程、模型架构、训练基础设施、推理优化 | FineWeb, MoE, MLA, Megatron, vLLM |
-| [02-后训练与对齐](./02-后训练与对齐/) | SFT、RL 算法、RL 训练框架 | GRPO, DPO, veRL, ROLL, AReaL |
-| [03-推理与Agent](./03-推理与Agent/) | 推理模型、DeepResearch、Agent 系统 | DeepSeek-R1, Qwen DeepResearch, IterResearch |
+| [02-后训练与对齐](./02-后训练与对齐/) | SFT、RL 算法、RL 训练框架、评估基准、AI 安全 | GRPO, DPO, veRL, MMLU, SWE-bench, Constitutional AI |
+| [03-推理与Agent](./03-推理与Agent/) | 推理模型、DeepResearch、Agent 系统 | DeepSeek-R1, MCP, Coding Agent, Agent Swarm |
 | [04-生成模型](./04-生成模型/) | 图像生成、视频生成、多模态统一 | FLUX.2, Sora 2, Wan 2.2, DiT, Flow Matching |
-| [05-开源模型Tech-Report](./05-开源模型Tech-Report/) | 具体模型技术报告解读 | Kimi K2.5, Step 3.5 Flash, GLM-5, OLMo 3, Molmo 2 |
+| [05-开源模型Tech-Report](./05-开源模型Tech-Report/) | 7 个模型技术报告解读 | DeepSeek-V3/R1, Kimi K2.5, Step 3.5 Flash, GLM-5, OLMo 3, Molmo 2 |
 | [06-推荐阅读清单](./06-推荐阅读清单.md) | 按主题分类的必读论文 | 综合阅读指南 |
+| [07-语音与音频模型](./07-语音与音频模型/) | TTS、ASR、音乐生成、语音 Agent | CosyVoice 2, Whisper, Suno, Realtime API |
+| [08-学习路线与实战项目](./08-学习路线与实战项目/) | 零基础入门、Agent 开发路径、本地体验 | Ollama, LangGraph, MCP, ComfyUI, Unsloth |
 
 ## 四、技术栈全景图
 
@@ -85,6 +95,9 @@ AI 技术全景
 │                     │        └──────────┘  └──────────┘   │
 │                                                            │
 │  并行策略: TP + PP + DP + CP + EP (Megatron / DeepSpeed)   │
+│                                                            │
+│  音频层: TTS (CosyVoice/F5-TTS) │ ASR (Whisper/SenseVoice)│
+│  安全层: Constitutional AI │ RLHF │ Red Team │ SAE 可解释性 │
 └────────────────────────────────────────────────────────────┘
 ```
 
@@ -96,3 +109,8 @@ AI 技术全景
 **想了解图像/视频生成？** → [04-生成模型/README.md](./04-生成模型/README.md)
 **想看具体模型技术报告？** → [05-开源模型Tech-Report/README.md](./05-开源模型Tech-Report/README.md)
 **想要一份阅读清单？** → [06-推荐阅读清单.md](./06-推荐阅读清单.md)
+**想了解语音和音频 AI？** → [07-语音与音频模型/README.md](./07-语音与音频模型/README.md)
+**想了解评估基准和 AI 安全？** → [02-后训练与对齐/评估基准与方法论.md](./02-后训练与对齐/评估基准与方法论.md)、[AI安全与对齐](./02-后训练与对齐/AI安全与对齐.md)
+**零基础不知从哪开始？** → [08-学习路线与实战项目/零基础入门指南.md](./08-学习路线与实战项目/零基础入门指南.md)
+**想学 Agent 开发？** → [08-学习路线与实战项目/Agent开发学习路径.md](./08-学习路线与实战项目/Agent开发学习路径.md)
+**想在自己电脑上跑 AI？** → [08-学习路线与实战项目/本地AI体验项目.md](./08-学习路线与实战项目/本地AI体验项目.md)
