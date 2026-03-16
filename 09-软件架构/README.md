@@ -45,7 +45,6 @@ AI 时代的能力分层：
 
 - [书单与阅读计划](./书单与阅读计划.md) - 分层书单 + 推荐阅读顺序
 - [DDIA 阅读笔记](./DDIA阅读笔记.md) - 《Designing Data-Intensive Applications》精读
-- [项目架构复盘](./项目架构复盘.md) - 用自己的项目练习架构分析
 
 ## 与本 repo 其他章节的关系
 
