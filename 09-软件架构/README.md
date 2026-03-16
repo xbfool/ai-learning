@@ -47,6 +47,7 @@ AI 时代的能力分层：
 - [DDIA 阅读笔记](./DDIA阅读笔记.md) - 《Designing Data-Intensive Applications》精读
 - [Building Agentic AI Systems 概览](./Building-Agentic-AI-Systems-概览.md) - 逐章核心思想
 - [多 Agent 协作模式 — 2026 前沿](./多Agent协作模式-2026前沿.md) - CWD 演进 + Claude Agent Teams + 分布式系统视角
+- [云端 Agent 服务架构最佳实践](./云端Agent服务架构最佳实践.md) - SaaS 场景下的状态管理、成本控制、可靠性、多租户
 
 ## 与本 repo 其他章节的关系
 
