@@ -46,6 +46,7 @@ AI 时代的能力分层：
 - [书单与阅读计划](./书单与阅读计划.md) - 分层书单 + 推荐阅读顺序
 - [DDIA 阅读笔记](./DDIA阅读笔记.md) - 《Designing Data-Intensive Applications》精读
 - [Building Agentic AI Systems 概览](./Building-Agentic-AI-Systems-概览.md) - 逐章核心思想
+- [多 Agent 协作模式 — 2026 前沿](./多Agent协作模式-2026前沿.md) - CWD 演进 + Claude Agent Teams + 分布式系统视角
 
 ## 与本 repo 其他章节的关系
 
